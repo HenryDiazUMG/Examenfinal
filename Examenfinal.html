@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Ahorro de una persona </title>
+</head>
+
+    <body>
+
+        <h3> Ahorro mensual de una persona </h3>
+
+        <form action="">  
+            Cantidad de dinero que desea ahorrar =
+            <input type="text" id="num1"> <br> <br> 
+            Cantidad de meses que ahorrará esa cantidad = 
+            <input type="text" id="num2"> <br> <br> 
+
+            
+            <input type="button" value="Enviar" onclick="alert( sumar(1,2) );"> <br> <br> 
+        </form>
+
+
+        <script>
+
+                var sumar = function(numero1, numero2){
+                var numero1 = parseFloat(document.getElementById("num1").value);
+                var numero2 = parseFloat(document.getElementById("num2").value);
+
+                var resultado = numero1 * numero2;
+                alert ('LA CANTIDAD AHORRADA ES: ' +resultado);
+                return resultado
+
+
+                
+            }
+               
+
+    </script>
+
+
+<div class="cate">
+    <img src="imagendinero.jpg" width="700" height="400">
+</div>
+    
+</body>
+</html>
